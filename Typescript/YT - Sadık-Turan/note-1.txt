@@ -1,0 +1,25 @@
+TypeScript 
+
+- Superset (üst küme) of Javascript 
+- Transpiler (aktarıcı) yazdığımız kod JS ES5 koduna çevirir.
+- Compile - time Error Yazdığımız Kodları Geliştirme Aşamasında hatasını alabiliyoruz.
+
+Çalışma Mantığı
+
+- örnek ts dosyasını oluşturuyoruz.  main.ts gibi
+- transpiler (npm typescript aracılığı) ile main.js 'e çeviriyoruz.
+- main.js' de browser'da çalışıyor (ya da node js ile console da derleniyor. ES5 ile)
+
+VsCode ile Çalıştırma
+
+- npm install -g typescript ile ts compiler iner.
+- tsc --version ile version kontrol yapılır.
+- tsc greeter.ts ile ts dosyanı js dosyasına transpile et
+- node greeter.js ile derle ve çıktı gör
+
+
+
+
+
+
+
