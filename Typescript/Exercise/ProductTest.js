@@ -1,0 +1,14 @@
+"use strict";
+exports.__esModule = true;
+var Product_1 = require("./Product");
+var ProductService_1 = require("./ProductService");
+var prdManager = new ProductService_1.ProductManager();
+console.log("1-");
+prdManager.getProducts().forEach(function (p) { return console.log(p.name); });
+console.log("2- 2 numaralı id'li ürün " + prdManager.getById(2).name);
+prdManager.saveProduct(new Product_1.Product(undefined, "iPhone 11", "Telefon", 2500));
+console.log("3- eklendikten sonra liste ");
+prdManager.getProducts().forEach(function (p) { return console.log(p.name); });
+prdManager.deleteProduct(prdManager.getById(1));
+console.log("4- silindikten sonra liste ");
+prdManager.getProducts().forEach(function (p) { return console.log(p.name); });
