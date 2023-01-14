@@ -1,0 +1,23 @@
+- Single Page Application (Tek sayfa uygulamalar)'dan biri Angular'dır.
+- Bir javascript kütüphanesidir. Front-end tarafındadır. Data için API lazım.
+- Mobile uygulama (native olarak) geliştirilebiyor.
+- Masaüstü uygulama da geliştirilebiyor.
+- Mobil uygulama için nativescript ya da ionic kullanarak geliştirme yapabiliriz.
+- Masaüstü uygulamalar için electronjs kullanabiliriz.
+---------------------
+Kurulum: 
+
+    - node js indir.
+    - version kontrolleri için node --version || npm --version yapabiliriz.
+    - npm install -g @angular/cli ile angular'ı indir.
+    - ng version ile angular versiyonu öğrenebiliriz.
+    - ng serve ile anguları ayağa kaldırabiliriz.
+
+
+
+
+
+
+
+
+
