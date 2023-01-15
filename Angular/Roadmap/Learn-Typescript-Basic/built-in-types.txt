@@ -1,0 +1,15 @@
+Any türü TypeScript'teki tüm türlerin superseti'dir. Dinamik bir türü belirtir. Herhangi bir türü kullanmak, bir değişken için tür denetimini devre dışı bırakmakla eşdeğerdir.
+
+Built in types : number,string,boolean,void,null,undefined
+
+null: bir nesne değerinin kasıtlı yokluğunu temsil eder.
+undefined: Tüm başlatılmamış değişkenlere verilen değeri belirtir.
+
+
+null vs undefined
+
+-> undefined ile başlatılan bir değişken değişkenin kendisine atanmış bir değeri veya nesnesi olmadığı anlamına gelirken; null değişkenin değeri tanımsız olan bir nesneye ayarlandığı anlamına gelir.
+
+if null == undefined  means true but if null === undefined means false
+
+null + 1 = 1  but undefined + 1 = NaN

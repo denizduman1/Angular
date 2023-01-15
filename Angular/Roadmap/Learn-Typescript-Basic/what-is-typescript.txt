@@ -1,0 +1,13 @@
+Typescript, Javascript üzerine kurulu türü kesin olarak belirlenmiş (strongly-typed) nesne yönelimli derlenmiş bir programlama dilidir. Javascript dilinin bir superset'idir.
+    Typescript open source Microsoft tarafından desteklenen hem bir dil hem de bir dizi araç olarak kabul edilir.
+Typscript kendisini "JavaScript with syntax for types" olarak tanıdır. Kısaca tipler için syntax'lı JavaScript diyebiliriz.
+    Typescript'in temel amacı Javascript'teki geliştirmeyi daha verimli hale getirim olası hataları daha erken yakalamamıza yardımcı olmaktır.
+Javascript dinamik olarak yazılır. Başka bir deyişle çalışma zamanında bir değişken başlatılıncaya kadar, Javascript bunun ne tür olduğunu bilemez. Ve bir değişkennin yanlış bir şekilde belirli bir tür olduğu varsayılırsa bu önemli hatalara neden olabilir. Bu Typescript'in loosely typed yazılmış JavaScript için desteklediğin başka bir alandır. (TLS Typescript Language Service) ile Typescript bildirilmemiş değişkenleri çıkarsayabilen isteğe bağlı bir statik yazma ve tür çıkarım sistemine sahiptir. Böylece Javascript'e tür desteği ekleyerek olası derleme sırasındaki hatalarını etkili bir şekilde azaltabilir.
+    Object Oriented programming'i benimsemeyi başaramayan JavaScript'in aksine Typescript sınıflar arayüzler ve kalıtım gibi nesne yönelimşi progrmalama kavramalrını destekler.
+    
+
+
+
+
+
+

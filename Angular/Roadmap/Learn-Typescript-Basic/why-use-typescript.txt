@@ -1,0 +1,10 @@
+Neden typescipt kullanmalıyız?
+    Typescript js'i genişleterek daha iyi bir geliştirici deneyimi sağlar. Ts kullanmanın Js'e göre avantajları: isteğe bağlı statik yazma, object orianted programming desteği, typescript javascript'e derlendiğinde hatalar çalışma zamanı değil derleme zamanı sırasında tespit edilir. Kod tabanı için otomatik tamamlama ts'de IDE'lerde mevcuttur. IDE'ler ayrıca satır içi hata varsa vurgular.
+
+5 neden ile Typescript 
+ 
+    1- Typescript js'in tip güvenli üst kümesidir.
+    2- Tür çıkarımında bulunarak olası hataları tespit eder. (string atanmış değişkene integer atamaya kalkışırsan hata verir.)
+    3- Ts ES6 ve ES7 Js özelliklerini destekler.
+    4- Js'in eski sürümlerini ts config'de target yapabiliriz.
+    5- Vs Code ile Ts çalışmak işleri çok kolaylaştırıyor.

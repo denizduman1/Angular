@@ -1,0 +1,6 @@
+Tür çıkarımı
+
+    örnek: 
+        let x = 3;  
+    
+    -> x değişkeninin sayı olduğu çıkarımı yapılır. Bu tür bir çıkarım değişkenleri ve üyeleri başlatırken,parametre varsaylan değerlerini ayarlarken ve fonskiyon dönüş türlerini belirlerken gerçekleşir.

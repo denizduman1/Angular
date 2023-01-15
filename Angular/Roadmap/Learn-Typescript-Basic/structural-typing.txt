@@ -1,0 +1,45 @@
+Typescript bir yapısal tip (structural typing) sistemidir.
+
+örnek: 
+
+interface Ball {
+  diameter: number;
+}
+interface Sphere {
+  diameter: number;
+}
+
+let ball: Ball = { diameter: 10 };
+let sphere: Sphere = { diameter: 20 };
+
+sphere = ball;
+ball = sphere; 
+
+bu şekilde atama mümkündür. Ama ...
+
+
+interface Tube {
+  diameter: number;
+  length: number;
+}
+
+let tube: Tube = { diameter: 12, length: 3 };
+
+tube = ball; // mümkün değildir.
+ball = tube; // tube'nin içindeki değişken ball'da olduğu için bu mümkündür.
+
+
+let createBall = (diameter: number) => ({ diameter });
+let createSphere = (diameter: number, useInches: boolean) => {
+  return { diameter: useInches ? diameter * 0.39 : diameter };
+};
+
+createSphere = createBall;
+createBall = createSphere; // bu mümkün değidlir çünkü useInches parametresi createBall'da mevcut değildir.
+
+
+
+
+
+
+

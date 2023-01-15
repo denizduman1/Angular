@@ -1,0 +1,33 @@
+Typescript'te Tip Kontrolü
+
+ let x == "3"
+ if(x instanceof string) -> true
+
+
+-> typeof keyword'ü yalnızca js tarafından tanımlanan türleri belirleyebilir
+    boolean
+    string
+    bigint
+    symbol
+    undefined
+    function
+    number
+
+typeof v === "string"
+
+
+-> in keyword'ü bir özelliğin o sınıfta type'ta interface'de olup olmadığını kontrol ederken bakabiliriz.
+
+interface Person {
+    name: string;
+    age: number;
+  }
+
+let person = {name:"a",age=1}
+
+if('name' in person) -> true
+
+
+-> === operatörü ile de tip kontrolü sağlanabilir.
+
+
