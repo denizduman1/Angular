@@ -1,4 +1,14 @@
-<h2>movie list</h2>
+<h2>{{title}}</h2>
 
+<div class="card">
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item" style="list-style: none;" *ngFor="let item of movies">
+            <span class="badge bg-success">id : {{item.id}}</span>  film adı:  {{item.name}}    
+        </li> 
+     </ul>
+</div>
+
+
+<!--<h1>Burası renk değiştirmiyor</h1>-->
 <movie></movie>
 <movie></movie>
