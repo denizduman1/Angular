@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Movie } from '../data/movie';
 
 @Component({
   selector: 'movie',
@@ -6,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./movie.component.css']
 })
 export class MovieComponent {
-
+    @Input() movie:Movie = {id:0,name:""}; // input ile veriyi alır.
+    
 }

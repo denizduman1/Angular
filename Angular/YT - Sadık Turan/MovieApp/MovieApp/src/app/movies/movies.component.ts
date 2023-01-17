@@ -14,8 +14,12 @@ import { Movies } from "../data/movie.datasource";
 export class MoviesComponent {
    title = 'Movie List';
    movies = Movies;
+   selectedMovie: Movie = {id:0,name:""};
+
    getTitle() {
       return this.title;
    }
-
+   onSelect(movie:Movie) : void{
+      this.selectedMovie = movie;
+   }
 }

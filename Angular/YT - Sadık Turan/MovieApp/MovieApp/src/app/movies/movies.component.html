@@ -1,8 +1,12 @@
 <h2>{{title}}</h2>
 
+
+
+
 <div class="card">
     <ul class="list-group list-group-flush">
-        <li class="list-group-item" style="list-style: none;" *ngFor="let item of movies">
+        <li  class="list-group-item" style="list-style: none;" *ngFor="let item of movies" (click)="onSelect(item)" 
+        [class.bg-secondary] = "item === selectedMovie" [class.bg-secondary] = "item === selectedMovie" >
             <span class="badge bg-success">id : {{item.id}}</span>  film adı:  {{item.name}}    
         </li> 
      </ul>
@@ -10,5 +14,4 @@
 
 
 <!--<h1>Burası renk değiştirmiyor</h1>-->
-<movie></movie>
-<movie></movie>
+<movie [movie] = "selectedMovie"></movie>
