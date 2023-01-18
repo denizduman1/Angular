@@ -5,12 +5,14 @@ import { AppComponent } from './app.component';
 import { MoviesComponent } from './movies/movies.component';
 import { MovieComponent } from './movie/movie.component';
 import { FormsModule } from '@angular/forms';
+import { LoggingComponent } from './logging/logging.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MoviesComponent,
-    MovieComponent
+    MovieComponent,
+    LoggingComponent
   ],
   imports: [
     BrowserModule,
