@@ -1,0 +1,86 @@
+Modules
+---
+
+ -> Angular mimarisinde module yapılanması uygulama öğelernin gruplandırılmasını sağlamaktadır. Böylece uygulama daha düzenli bir şekilde inşa edilebilir hale getirilmektedir. 
+ -> Modüller, uygulamanın çeşitli parçalarını (components services vs) bir araya getirerek bir bütün olarak kullanılabilir kılmaktadırlar.
+ -> Bir uygulama da n tane modül olabilir bu modüllerden biri ana modüldür. genelde bunun adı app-module'dür.
+ -> Bir modül diğer modüle import edilmedikçe diğer modül tarafından kullanılamaz.
+ -> Ayruca modüller dependency injection pattern'i kullanarak uygulamalardaki öğeler arasında bağımlılıkları yönetmekte ve böylece test edilebilirlik ve bakım açısından kolaylık sağlamaktadırlar.
+ -> Angular'ın işlemleri optimize etmek için kullandığı 'Lazy Loading' özelliğinide destekleyerek sadece ihtiyaç duyulduğu takdirde yüklenmelerini de sağlayabilmektedirler.
+
+Components
+----
+
+-> Component'ler uygulamanın görüntüleme katmanını ifade eden ve eri modeliyle etkileşim kurarak kullanıcılara uygulamanın görsel kısmını sunan yapılardır.
+-> Yapısal olarak html ve ts dosyalarından oluşmaktadırlar.
+-> Componentler veri modeliyle etkileşim kurabilmek için Data Binding özelliğini kullanmaktadırlar.
+-> Ayrıca ihtiyaç duydukları servislerin instance'larını Dependency Injection ile elde edebilirler.
+
+
+Data Binding
+----
+
+-> Data Binding özelliği sayesinde veri modeli ile template'ler arasında veri akışını dinamik bir şekilde sağlayabilmektedir.
+
+-> Böylece uygulamadaki verisel değişikler otomatik olarak sayfalara yansıtılabilmektedir.
+
+-> Data binding çift yönlü (two way data binding) çalışmaktadır. Yani veri modeli güncellendiği zaman template'te, template güncellendiği zaman ise veri modeline anında yansıtılmaktadır.
+
+Dependency Injection 
+----
+
+-> Angular mimarisi uygulamada mevcut olan öğeler arasındaki bağımlılıkları yönetebilmek için dependency injection pattern'ini kullanmaktadır.
+
+Directives 
+----
+
+-> Directive'ler Html nesnelerinin davranışlarını ve görünümlerini yönetebilmemizi sağlayan özel etiketlerdir.
+
+-> Uygulamanın dinamik ve etkileşimli olmasını sağlayan yapılardır.
+
+Decorators
+----
+
+-> Bir class'a yahut herhangi bir class member'ina metadata ekleyebilmekteyiz. Böylece ilgili yapının davranışı hakkında bir ön tanımda bulunmaktayız.
+
+-> Misal olarak bir class'ı @Component decorator'i ile işaretlerdsek eğer bir component, yok eğer @Injectable ile işaretlerse bir service olacağı anlamına gelmektedir.
+
+
+Services
+----
+
+-> Angular'da genellikle dış servidslerde (API-endpoint) iletişim kurmak, karmaşık iş operasyonlarını veya business logic'i yürütmek yahut component'^ler arasında iletişim sağlayabilmek için kullanılan fiili yapılanmalardır.
+
+
+Templates
+----
+
+-> Component'lerin html kısmıdır. içerisinde directive, pipe'lar vs barındırabilir ve bunları işlevlerine göre çalıştırabilirler.
+
+-> Data binding desteklemekte ve veri modeli ile dinamik şekilde etkileşime girebilir.
+
+Guards
+----
+
+-> Route erişimlerinin izin kontrolleri Guard yapılanması üzerinden gerçekleştirilmektedir.
+
+-> Sayfalar arası geçiş süreçlerinde ilgili kullanıcının erişimine izin verilip verilmeyeceğine dair karar veren yapılanmalardır.
+
+-> Authentication, Authorization
+
+Pipes
+----
+
+-> Verilerin görüntülenme süreçlerinde işlenmesine yönelik işlevsellik sağlayan yapılardır.
+
+-> Misal olarak bir verinin tarihsel yahut parasal biçime dönüştürülmesi pipe'lar sayesinde gerçekleştirebiliriz.
+
+
+
+
+
+
+
+
+
+
