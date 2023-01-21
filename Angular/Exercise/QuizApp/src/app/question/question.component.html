@@ -1,0 +1,65 @@
+<div class="container mt-5">
+  <div class="card">
+    <div class="d-flex justify-content-between p-3">
+      <div class="image">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/1200px-Angular_full_color_logo.svg.png"
+          width="90"
+          alt=""
+        />
+      </div>
+      <div class="quiz-header">
+        <h4 style="font-family: cursive">Angular & Typescript Quiz!</h4>
+        <span style="font-style: italic">Welcome {{ name }}</span>
+      </div>
+    </div>
+    <div class="d-flex justify-content-around py-3">
+      <div class="score">
+        <h5>{{ points }} Points</h5>
+      </div>
+      <div class="question-remain">
+        <span style="font-style: italic"
+          >Question {{ currentQuestion + 1 }} of 9</span
+        >
+      </div>
+      <div class="timer">
+        {{ counter }} sec
+        <img
+          style="margin-left: 5px"
+          width="20"
+          src="https://cdn-icons-png.flaticon.com/512/66/66163.png"
+          alt=""
+        />
+      </div>
+    </div>
+    <div class="progress m-3">
+      <div
+        class="progress-bar progress-bar-striped bg-success"
+        role="progressbar"
+        [ngStyle]="{ width: getProgressPercent() + '%' }"
+        aria-valuenow="25"
+        aria-valuemin="0"
+        aria-valuemax="100"
+      ></div>
+    </div>
+    <div class="question">
+      <div class="card d-flex justify-content-center" style="min-height: 100px">
+        <h3>{{ questionList[currentQuestion]?.questionText }}</h3>
+      </div>
+    </div>
+    <div class="options">
+      <ol *ngFor="let option of questionList[currentQuestion]?.options">
+        <li (click)="answer(currentQuestion + 1, option)">
+          <div class="card">
+            {{ option.text }}
+          </div>
+        </li>
+      </ol>
+    </div>
+    <div class="d-flex justify-content-between m-3">
+      <button class="btn btn-danger" (click)="previousQuestion()">Geri</button>
+      <button class="btn btn-primary" (click)="resetQuiz()">Yenile</button>
+      <button class="btn btn-success" (click)="nextQuestion()">İleri</button>
+    </div>
+  </div>
+</div>
