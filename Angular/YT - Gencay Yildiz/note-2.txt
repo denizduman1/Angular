@@ -1,0 +1,19 @@
+Binding Nedir?
+
+-> Component class'ında bulunan bir modelin veya fonksiyonun Template'deki bir alan ya da DOM nesnesi ile canlı olarak bağlantı oluşturmasını sağlayan kavramdır.
+
+-> Text Interpolations, Property Binding, Event Binding, Two Way Binding, Attribute Binding, Class Binding,
+Style Binding türleri vardır.
+
+-> Text Interpolations: Component Clas'ı içerisind tanımlı olan bir field/property değerinin yazdırılması için kullanılan Binding yönetimidir.
+
+-> Property Interpolations: Template içerisindeki HTML nesneleri veya directive'ler için Component Class'ında tanımlı olan verilerin property olarak direkt bağlanmasını sağlayan yöntemdir.
+
+
+
+
+
+
+
+
+
