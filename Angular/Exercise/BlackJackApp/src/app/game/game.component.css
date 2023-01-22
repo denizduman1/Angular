@@ -1,0 +1,13 @@
+*{
+    color: black;
+    font-size: 21px;
+}
+button{
+    color: white;
+}
+
+img{
+    width: 150px;
+    object-fit: cover;
+}
+

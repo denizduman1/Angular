@@ -1,0 +1,65 @@
+<div class="container mt-5">
+  <div class="card" *ngIf="pageNumber == 0">
+    <div class="card-header">
+      <h3>Hoşgeldiniz..</h3>
+    </div>
+    <div class="card-body">
+      <h4 style="color: rgb(248, 22, 237)">Oyunun Kuralları</h4>
+      <ul class="mt-3" style="font-size: 18px">
+        <li>
+          Oyunun amacı, oyuncunun 21 puanı geçmemek şartıyla krupiyenin puanını
+          geçmektir.
+        </li>
+        <li>Oyuncu ve krupiyen ilk olarak her biri 2 adet kart alır.</li>
+        <li>
+          Kartların değerleri: numaralı kartlar (2-10) kendi numaraları kadar
+          puan değerindedir, figür kartları (Vale, Kız, Papaz) 10 puan
+          değerindedir, As 1 veya 11 puan değerinde olabilir.
+        </li>
+        <li>
+          Oyuncu ilk olarak kartlarını görür ve daha fazla kart isteyebilir
+          (hit) veya pas (stand) verebilir.
+        </li>
+        <li>Eğer oyuncu 21 puanı geçerse, o anın kazananı krupiyedir.</li>
+        <li>
+          Eğer oyuncu pas verirse, krupiyen kartlarını açar ve kurallara göre
+          (genellikle 17 veya daha yüksek puan) daha fazla kart isteyebilir veya
+          pas verebilir.
+        </li>
+        <li>Eğer krupiyen 21 puanı geçerse, oyuncu anın kazananıdır.</li>
+        <li>
+          Eğer oyuncu ve krupiyen aynı puana sahipse, oyun berabere biter.
+        </li>
+        <li>
+          Eğer oyuncunun puanı krupiyenin puanından daha yüksekse, oyuncu anın
+          kazananıdır.
+        </li>
+      </ul>
+    </div>
+    <div class="card-footer p-3">
+      <button class="btn btn-primary float-end" (click)="nextPage()">
+        Okudum, anladım.
+      </button>
+    </div>
+  </div>
+  <div class="card" *ngIf="pageNumber == 1">
+    <div class="card-header">
+      <h3>Hoşgeldiniz..</h3>
+    </div>
+    <div class="card-body p-5">
+      <div class="input-group">
+        <span class="input-group-text">Username</span>
+        <input type="text" class="form-control" #username />
+      </div>
+    </div>
+    <div class="card-footer p-3">
+      <button
+        class="btn btn-success float-end"
+        (click)="setUserName()"
+        routerLink="/game"
+      >
+        Oyuna başla
+      </button>
+    </div>
+  </div>
+</div>

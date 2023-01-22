@@ -1,0 +1,57 @@
+<div class="container mt-5">
+  <div class="card" style="background-color: rgb(245, 216, 189)">
+    <div class="card-header p-3">
+      Black Jack Oyununa Hoşgeldin: {{ username }}
+    </div>
+    <div class="card-body">
+      <div class="float-end">
+        <img
+          src="https://bicyclecards.org/wp-content/uploads/2019/11/450.png"
+        />
+      </div>
+      <div class="text-center">
+        <div
+          style="display: inline"
+          *ngFor="let item of kasaCards; let i = index"
+        >
+          <img
+            class="ms-1 animate__animated animate__fadeInRight animate__delay-2s"
+            src="{{ item.image }}"
+            alt=""
+          />
+          <img
+            *ngIf="(i == 0 && kagitSakla == false)"
+            class="ms-1 animate__animated animate__fadeInRight animate__delay-3s"
+            [src]="srcKasa"
+            alt=""
+          />
+        </div>
+      </div>
+
+      <div class="text-center my-5">
+        <button class="btn btn-danger me-3" (click)="wantCard()">
+          Kağıt İste
+        </button>
+        <button class="btn btn-primary" (click)="kasaAc()">Bitir</button>
+      </div>
+
+      <div class="text-center mt-5 pe-5 me-5">
+        <div *ngFor="let item of myCards; let i = index" style="display: inline;">
+          <img
+            *ngIf="i != 1"
+            class="me-3 animate__animated animate__fadeInRight animate__delay-3s"
+            src="{{ item.image }}"
+            alt=""
+          />
+          <img
+            *ngIf="i == 0"
+            (click)="getCard()"
+            style="cursor: pointer"
+            class="animate__animated animate__fadeInRight animate__delay-4s"
+            [src]="src"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
