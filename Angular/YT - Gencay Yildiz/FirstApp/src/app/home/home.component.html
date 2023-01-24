@@ -2,5 +2,9 @@
 <h1>{{ title }}</h1>
 <input style="font-size: 20px" type="text" [value]="title" />
 <button [style]="style">Click me</button>
-<h2>{{pageName}}</h2>
+<h2>{{ pageName }}</h2>
 
+<input  type="text" [(ngModel)]="deger" (ngModelChange)="onChange($event)" />
+{{ deger }}
+
+<h3 [style]="color">renk değiş</h3>

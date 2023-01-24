@@ -9,11 +9,15 @@ Style Binding türleri vardır.
 
 -> Property Interpolations: Template içerisindeki HTML nesneleri veya directive'ler için Component Class'ında tanımlı olan verilerin property olarak direkt bağlanmasını sağlayan yöntemdir.
 
+-> Event Binding: Template içerisindeki herhangi bir DOM nesnesinin componenet class içerisinde tanımlı olan bir fonksiyona event olarak bağlanmasıdır.
+
+-> Two-Way Binding: Template içerisindeki bir HTML nesnesinin değeri değiştiğinde o nesneyle bind edilmiş olan Component Class'ı içerisindeki field/property değerinin anlık olarak değiştirilmesini ve aynı zamanda tam tersi durumunda geçerli olmasını sağlayan yöntemdir.
 
 
+-> Attribute Binding: Html elemanlarının attribute'ları için değerli doğrudan component class'ından verişmesini sağlayan yöntemdir.
 
 
-
+-> Style ve Class Binding: Bir html öğesine Css ile ilgili style veya class bilidirlerinde bulunmak için kullanılan yöntemdir.
 
 
 

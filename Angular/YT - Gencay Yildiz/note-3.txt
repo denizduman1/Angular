@@ -1,0 +1,26 @@
+Interpolation Syntax
+
+-> Angular'da component class'ı içerisindeki herhangi bir field ya da property'nin değerinin {{}}
+ile html içerisinde kullanılmasına text interpolation bu ifadeye ise interpolation syntax denmektedir. (araya değer eklemek)
+
+-> One-way tek yönlü data binding gerçekleştirmektedir.
+
+-> Uygulamanın durumunu(state) değiştirebilecek herhangi bir işlem gerçekleştirememektedir.
+
+-> keyword'ler ve işlemler Interpolation ile birlikte kullanılamaz.
+
+-> Interpolation'daki iki değişkeni aritmetik işleme sokabilir string birleştirme yapabiliriz.
+Template referans'ı kullanabilir yahut herhangi bir fonksiyonu tetikleyebiliriz.
+
+-> #variable şeklinde template referans verebiliriz.
+
+-> Interpolation ile gelen Script veya HTML kodları handle edilmeksizin oldukları gibi(metinsel olarak) yansıtılırlar.
+
+
+
+
+
+
+
+
+
