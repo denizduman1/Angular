@@ -16,10 +16,13 @@ Template referans'ı kullanabilir yahut herhangi bir fonksiyonu tetikleyebiliriz
 
 -> Interpolation ile gelen Script veya HTML kodları handle edilmeksizin oldukları gibi(metinsel olarak) yansıtılırlar.
 
+-> NgNonBindable : Interpolation operatörünün compile edilmemesini istediğimiz noktalarda bu özelliği devreye sokarız. html'e attribute olarak verilir.
 
+-> Pipe'larda kullanılabilir. {{text | uppercase}}
 
+-> Nullable operatörü kullanılabilir.
 
-
+-> Non-null assertion operatörü kullanılabilir. Null olmayacağını ya da olursa da sorumluluğu üzerimize almak için kullanıyoruz. (! işareti person!.name)
 
 
 
