@@ -1,0 +1,11 @@
+<ul>
+  <li *ngFor="let item of names; index as i">
+    <span *ngIf="i % 2 != 3">Id : {{ i }} {{ item }}</span>
+  </li>
+</ul>
+
+<h2 *ngIf="1; else elseMessage">Başlık gözükecek</h2>
+
+<ng-template #elseMessage> else message </ng-template>
+
+<div #elseMessage>a</div>

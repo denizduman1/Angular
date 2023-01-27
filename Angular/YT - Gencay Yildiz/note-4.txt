@@ -1,0 +1,38 @@
+Directives
+----
+
+. Html elemanlarına ekstra özellikler ve davranışlar eklemek için kullanılan özel etiketlerdir.
+. DOM nesnelerini manipüle etmemizi sağlayan özel yapılanmalrdır.
+. Angularda davranışlara göre farklı işlevsellik gösteren hazır directive'ler mevcuttur.
+
+
+-> Built in directives
+
+    . Mimarinin bizlere sunulan ve belirli işlemlere odaklı davranışlar sergileyen directive'ler vardır.
+
+    . ngFor, ngSwitch, ngIf, ngClass, ngStyle, ngModel, NgNonBindable
+
+    . ngFor : Html nesneleri üzerinde iterasyonel işlemler yapmak için kullanılan directivlerdir.
+
+    . ngIf: Html nesnelerinin görünürlüğünü kontrol etmek için kullanılan temel bir directivedir.
+
+    . ngSwitch: Verilen koşula göre HTML nesnelerinin görünürlüğünü yahut içeriğini değiştirmek için kullanılan temel bir directive'dir.
+
+    . ngClass: Html etiketlerinin class değerlerini dinamik olarak yönetebilmebizi sağlayan bir directive'dir.
+
+    . ngStyle: Html etiketlerinin style değerlerini dinamik olarak yönetebilmebizi sağlayan bir directive'dir.
+
+    . ngModel & ngNonBindable: Herhangi bir form nesnesinde two way databinding yapabilmezi sağlayan directivedir. NgNonBindable text interpolition operatörünün etkisiz kılınmasını sağlayan directivedir.
+
+    
+
+
+
+
+
+
+
+
+
+
+
