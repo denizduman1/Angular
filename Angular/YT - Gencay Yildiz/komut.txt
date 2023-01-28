@@ -1,6 +1,7 @@
 angular projesi oluşturmak için => ng new projectName
 anguları portu ile ayağa kaldırmak için =>  ng serve --port 2828 
 component eklemek için => ng g c componentName
+directive klasörle eklemek => ng g d directives/directiveName
 
 
 

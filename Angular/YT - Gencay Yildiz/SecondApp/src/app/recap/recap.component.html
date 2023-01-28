@@ -1,3 +1,101 @@
+<div class="container p-5 bg-danger">
+  <button class="btn btn-success" id="jiraStart" (click)="first()">
+    Jira Kaydım var
+  </button>
+  <div class="card" id="card-0">
+    <div class="card-body">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt,
+      praesentium vitae expedita nam optio neque tempore eaque architecto
+      exercitationem nemo consequatur in dicta, non dolores, mollitia quod
+      nostrum dolore. Unde labore quo, nam doloremque optio, repellat quas nulla
+      omnis quos ex, sapiente fugiat excepturi dolorem. Expedita odio cum
+      corrupti, alias quo temporibus officiis cupiditate eligendi facere id sint
+      vero iusto saepe optio totam, aliquam earum excepturi omnis dolores est
+      molestiae ab perspiciatis rerum! Eum eos tempore nesciunt ipsum ducimus
+      dolorum quam hic, nisi laudantium sint mollitia amet recusandae rem fugit
+      nam labore. Voluptatum, similique suscipit eius a obcaecati impedit.
+      Tempore harum aliquid autem ipsa voluptates fuga repudiandae nam
+      consequatur, at alias numquam accusamus reprehenderit natus dolore
+      voluptatum nulla necessitatibus velit.
+      <br />
+      <div class="d-flex justify-content-end">
+        <button class="btn btn-primary mt-5" (click)="changeCardNumber()">
+          Diğerine geç
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="card mt-1" id="card-1">
+    <div class="card-body">
+      card-2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt,
+      praesentium vitae expedita nam optio neque tempore eaque architecto
+      exercitationem nemo consequatur in dicta, non dolores, mollitia quod
+      nostrum dolore. Unde labore quo, nam doloremque optio, repellat quas nulla
+      omnis quos ex, sapiente fugiat excepturi dolorem. Expedita odio cum
+      corrupti, alias quo temporibus officiis cupiditate eligendi facere id sint
+      vero iusto saepe optio totam, aliquam earum excepturi omnis dolores est
+      molestiae ab perspiciatis rerum! Eum eos tempore nesciunt ipsum ducimus
+      dolorum quam hic, nisi laudantium sint mollitia amet recusandae rem fugit
+      nam labore. Voluptatum, similique suscipit eius a obcaecati impedit.
+      Tempore harum aliquid autem ipsa voluptates fuga repudiandae nam
+      consequatur, at alias numquam accusamus reprehenderit natus dolore
+      voluptatum nulla necessitatibus velit.
+      <br />
+      <div class="d-flex justify-content-end">
+        <button class="btn btn-primary mt-5" (click)="changeCardNumber()">
+          Diğerine geç
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="card mt-1" id="card-2">
+    <div class="card-body">
+      card-3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt,
+      praesentium vitae expedita nam optio neque tempore eaque architecto
+      exercitationem nemo consequatur in dicta, non dolores, mollitia quod
+      nostrum dolore. Unde labore quo, nam doloremque optio, repellat quas nulla
+      omnis quos ex, sapiente fugiat excepturi dolorem. Expedita odio cum
+      corrupti, alias quo temporibus officiis cupiditate eligendi facere id sint
+      vero iusto saepe optio totam, aliquam earum excepturi omnis dolores est
+      molestiae ab perspiciatis rerum! Eum eos tempore nesciunt ipsum ducimus
+      dolorum quam hic, nisi laudantium sint mollitia amet recusandae rem fugit
+      nam labore. Voluptatum, similique suscipit eius a obcaecati impedit.
+      Tempore harum aliquid autem ipsa voluptates fuga repudiandae nam
+      consequatur, at alias numquam accusamus reprehenderit natus dolore
+      voluptatum nulla necessitatibus velit.
+      <br />
+      <div class="d-flex justify-content-end">
+        <button class="btn btn-primary mt-5" (click)="changeCardNumber()">
+          Diğerine geç
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="card mt-1" id="card-3">
+    <div class="card-body">
+      card-4 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt,
+      praesentium vitae expedita nam optio neque tempore eaque architecto
+      exercitationem nemo consequatur in dicta, non dolores, mollitia quod
+      nostrum dolore. Unde labore quo, nam doloremque optio, repellat quas nulla
+      omnis quos ex, sapiente fugiat excepturi dolorem. Expedita odio cum
+      corrupti, alias quo temporibus officiis cupiditate eligendi facere id sint
+      vero iusto saepe optio totam, aliquam earum excepturi omnis dolores est
+      molestiae ab perspiciatis rerum! Eum eos tempore nesciunt ipsum ducimus
+      dolorum quam hic, nisi laudantium sint mollitia amet recusandae rem fugit
+      nam labore. Voluptatum, similique suscipit eius a obcaecati impedit.
+      Tempore harum aliquid autem ipsa voluptates fuga repudiandae nam
+      consequatur, at alias numquam accusamus reprehenderit natus dolore
+      voluptatum nulla necessitatibus velit.
+      <br />
+      <div class="d-flex justify-content-end">
+        <button class="btn btn-primary mt-5" (click)="changeCardNumber()">
+          Diğerine geç
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
 <ul>
   <li *ngFor="let item of names; index as i">
     <span *ngIf="i % 2 != 3">Id : {{ i }} {{ item }}</span>
@@ -8,4 +106,4 @@
 
 <ng-template #elseMessage> else message </ng-template>
 
-<div #elseMessage>a</div>
+<div appExample color="blue">merhaba</div>
