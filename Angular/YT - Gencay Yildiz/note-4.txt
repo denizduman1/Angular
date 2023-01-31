@@ -25,10 +25,15 @@ Directives
     . ngModel & ngNonBindable: Herhangi bir form nesnesinde two way databinding yapabilmezi sağlayan directivedir. NgNonBindable text interpolition operatörünün etkisiz kılınmasını sağlayan directivedir.
 
     
+Structural Directive
+
+    -> Html nesnesini ve DOM yapısını fiziksel olarak manipüle ederek sayfa üzerinde değişiklikler yapmamızı sağlayan directive türüdür.
+    -> Structural directive'ler * karakteriyle çağrılırlar.
 
 
+Structural directive'ler; HTML şablonundaki DOM elemanlarının görünümünü fiziksel olarak değiştirerek template'in yapısını değiştirebilirler. 
 
-
+Normal directive'ler; HTML şablonundaki DOM elemanlarının görünümünü değişirmez, sadece ekstra özellikler eklerler.
 
 
 
