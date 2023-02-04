@@ -29,7 +29,8 @@ Structural Directive
 
     -> Html nesnesini ve DOM yapısını fiziksel olarak manipüle ederek sayfa üzerinde değişiklikler yapmamızı sağlayan directive türüdür.
     -> Structural directive'ler * karakteriyle çağrılırlar.
-
+    -> TemplateRef: Directive'in kullanıldığı template'i temsil eder.
+    -> ViewContainerRef: Angular'da bir template'in içeriğini içeren container'in referansıdır. Bu container içerisinden dinamik olarak HTML elemanları eklemeye yahut çıkarmaya yarar. İleride bir component'in dinamik olarak yüklenmesini sağladığında görüyor olacağız.
 
 Structural directive'ler; HTML şablonundaki DOM elemanlarının görünümünü fiziksel olarak değiştirerek template'in yapısını değiştirebilirler. 
 
